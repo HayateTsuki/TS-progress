@@ -18,7 +18,17 @@
 
 //// TODO:
 //// -----------------------HERE PLACE YOUR SOLUTION:-------------------------
+let userName: string
+let userId: number
+let userNames: string[] = []
+let userIds: number[] = []
 
+userName = "Bob"
+userId = 412
+userNames.push(userName)
+userIds.push(userId)
+
+console.log(userNames, "\n", userIds)
 //// -----------------------DONT MODIFY CODE BELOW!-------------------------
 // Here you will find expected result of exercise
 
