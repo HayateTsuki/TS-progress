@@ -17,6 +17,35 @@
 
 //// TODO:
 //// -----------------------HERE PLACE YOUR SOLUTION:-------------------------
+interface UserData {
+    id: number
+    fullName: string
+    pass: string
+    optional?: string
+}
+
+const object1: UserData = {
+    id: 1,
+    fullName: "Matthew Mole",
+    pass: "Yes"
+}
+
+const object2: UserData = {
+    id: 2,
+    fullName: "Eric Edinberg",
+    pass: "No",
+    optional: "of Course"
+}
+
+console.log("________________\nBefore change ids:")
+console.log("Object 1: ", object1)
+console.log("Object 2: ", object2)
+
+object1.id = 2
+object2.id = 1
+console.log("_________________\nAfter change ids:")
+console.log("Object 1: ", object1)
+console.log("Object 2: ", object2)
 
 //// -----------------------DONT MODIFY CODE BELOW!-------------------------
 // Here you will find expected result of exercise
