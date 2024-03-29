@@ -23,7 +23,36 @@
 
 //// TODO:
 //// -----------------------HERE PLACE YOUR SOLUTION:-------------------------
+enum HeroActions {
+    Attack,
+    Defend,
+    Move,
+    Rest
+}
 
+function invokeAction(action: HeroActions): void {
+    switch (action) {
+        case HeroActions.Attack:
+            console.log("Hero Attacks!")
+            break
+        case HeroActions.Defend:
+            console.log("Hero Defends!")
+            break
+        case HeroActions.Move:
+            console.log("Hero got the Moves!")
+            break
+        case HeroActions.Rest:
+            console.log("Hero Rests!")
+            break
+        default:
+            console.log("Unknown action")
+    }
+}
+
+invokeAction(HeroActions.Attack)
+invokeAction(HeroActions.Defend)
+invokeAction(HeroActions.Move)
+invokeAction(HeroActions.Rest)
 //// -----------------------DONT MODIFY CODE BELOW!-------------------------
 // Here you will find expected result of exercise
 
