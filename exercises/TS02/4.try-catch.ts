@@ -25,11 +25,16 @@ function getRandomValue(primaryIndex: number, secondaryIndex: number): string {
 
 //// TODO:
 //// -----------------------HERE PLACE YOUR SOLUTION:-------------------------
-
-function getRandomValueProxy(primaryIndex: number, secondaryIndex: number): string {
-    return getRandomValue(primaryIndex, secondaryIndex)
+function getRandomValueProxy(primaryIndex: number, secendaryIndex: number): string {
+    let result: string
+    try {
+        result = getRandomValue(primaryIndex, secendaryIndex)
+    } catch (error) {
+        console.log("An error occurred!")
+        result = "error!"
+    }
+    return result
 }
-
 //// -----------------------DONT MODIFY CODE BELOW!-------------------------
 // Here you will find expected result of exercise
 
