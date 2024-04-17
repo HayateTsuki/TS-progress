@@ -18,7 +18,9 @@ const values = [8, 4, 3, 4, 2, -2, 2]
 let largestValue
 //// TODO:
 //// -----------------------HERE PLACE YOUR SOLUTION:-------------------------
+import { getBiggestNumber } from "./helpers/data.helpers"
 
+largestValue = getBiggestNumber(values)
 //// -----------------------DONT MODIFY CODE BELOW!-------------------------
 // Here you will find expected result of exercise
 
