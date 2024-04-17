@@ -28,17 +28,30 @@ import { cheatAndPeekProjectSettings, loadProjectSettings, saveProjectSettings }
 // 1:
 console.log("1:")
 cheatAndPeekProjectSettings()
+const settings = await saveProjectSettings("Firefox", "1")
+console.log("Result after save: ", settings)
+cheatAndPeekProjectSettings()
 
 // 2:
 console.log("2:")
+const allSettings = loadProjectSettings()
+console.log("Result after load: ", await allSettings)
 
 // 3:
+async function loadValue(key: string): Promise<string> {
+    const loadedSettings = await loadProjectSettings()
+    return loadedSettings[key]
+}
 
 // 4:
 console.log("4:")
+let headlessValue = await loadValue("headless")
+console.log("headless value: ", headlessValue)
 
 // 5:
 console.log("5:")
+let chromeValue = await loadValue("Chrome")
+console.log("headless value: ", chromeValue)
 
 //// -----------------------DONT MODIFY CODE BELOW!-------------------------
 // Here you will find expected result of exercise
